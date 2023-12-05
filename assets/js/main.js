@@ -72,13 +72,13 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 3000,
-    delay:400,
+    delay:100,
     //reset:true // Animation repeats
 
 })
 
 sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
-sr.reveal(`.home__card`, {delay:600, distance: '100px', interval:200})
+sr.reveal(`.home__card`, {delay:200, distance: '100px', interval:200})
 sr.reveal(`.about__data, .join__image`, {origin:'right'})
 sr.reveal(`.about__image, .join__data`, {origin:'left'})
 sr.reveal(`.about__card`, {interval:200})

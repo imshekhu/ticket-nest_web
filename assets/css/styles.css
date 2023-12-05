@@ -736,9 +736,9 @@ img {
   position: fixed;
   bottom: -50%;
   right: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: hsla(0, 30%, 92%, 0.3);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsla(0, 0%, 100%, 0.884);
   border-radius: .5rem;
   display: inline-flex;
   justify-content: center;
