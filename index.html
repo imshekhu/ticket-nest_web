@@ -1,355 +1,328 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+   
+   <title>Ticket Nest</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            Ticket Nest
+         </a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link" active-link>Home</a>
+                  <a href="how_we_cater.html" class="nav__link">Explore</a>
+                  <a href="catalog.html" class="nav__link">Catalogues</a>
+                  <a href="process.html" class="nav__link">AI Journey Crafting</a>
+               </li>
+            </ul>
+
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-fill"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <img src="assets/img/home-bg.jpg" alt="home image" class="home__bg">
+         <div class="home__shadow"></div>
+
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h3 class="home__subtitle">
+                  Elevate Your Journeys with Ticket Nest <br>
+                  Call (888) 656-1811
+               </h3>
+
+               <h1 class="home__title">
+                  Discover AI-Crafted <br>
+                  Travel Adventures
+               </h1>
+
+               <p class="home__description">
+                  Embark on extraordinary journeys crafted just for you! Experience the wonders of AI-generated travel itineraries – from hidden gems to iconic landmarks. Your dream vacation is a conversation away.
+               </p>
+
+               <a href="#submit_form" class="button" >
+                  Start Your AI Journey <i class="ri-arrow-right-line"></i>
+               </a>
+            </div>
+
+            <div class="home__cards grid">
+               <article class="home__card">
+                  <img src="assets/img/home-trees.jpg" alt="home image" class="home__card-img">
+                  <h3 class="home__card-title">Ontario</h3>
+                  <div class="home__card-shadow"></div>
+               </article>
+               <article class="home__card">
+                <img src="assets/img/home-lake.jpg" alt="home image" class="home__card-img">
+                <h3 class="home__card-title">British Columbia</h3>
+                <div class="home__card-shadow"></div>
+             </article>
+
+             <article class="home__card">
+                <img src="assets/img/home-mountain.jpg" alt="home image" class="home__card-img">
+                <h3 class="home__card-title">Arizona</h3>
+                <div class="home__card-shadow"></div>
+             </article>
+
+             <article class="home__card">
+                <img src="assets/img/home-beach.jpg" alt="home image" class="home__card-img">
+                <h3 class="home__card-title">Florida</h3>
+                <div class="home__card-shadow"></div>
+             </article>
+               <!-- Add similar cards for other destinations -->
+
+            </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">
+                  Unleashing Unforgettable Experiences <br>
+                  Through AI Innovation
+               </h2>
+               <p class="about__description">
+                  Welcome to Ticket Nest, where your travel aspirations come to life through the power of artificial intelligence. Let us redefine your travel experience, ensuring every moment is tailored to your desires and interests. Join us on a journey where AI meets adventure!
+               </p>  
+
+               <a href="#submit_form" class="button">
+                  Explore AI-Enhanced Travel <i class="ri-arrow-right-line"></i>
+               </a>
+            </div>
+
+            <div class="about__image">
+               <img src="assets/img/about-beach.jpg" alt="about image" class="about__img">
+               <div class="about__shadow"></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+         <h2 class="section__title">
+            Immerse Yourself in the Beauty <br>
+            Of AI-Curated Destinations
+         </h2>
+
+         <div class="popular__container container grid">
+            <article class="popular__card">
+               <div class="popular__image">
+                  <img src="assets/img/popular-mountain.jpg" alt="popular image" class="popular__img">
+                  <div class="popular__shadow"></div>
+               </div>
+
+               <h2 class="popular__title">
+                  Mount Logan
+               </h2>
+
+               <div class="popular__location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Yukon</span>
+               </div>
+
+            </article>
+
+            <!-- Add similar cards for other destinations -->
+            <article class="popular__card">
+                <div class="popular__image">
+                   <img src="assets/img/pexels-sasha-prasastika-2894366.jpg" alt="popular image" class="popular__img">
+                   <div class="popular__shadow"></div>
+                </div>
+
+                <h2 class="popular__title">
+                   Banff
+                </h2>
+
+                <div class="popular__location">
+                   <i class="ri-map-pin-line"></i>
+                   <span>Alberta</span>
+                </div>
+
+             </article>
+
+             <article class="popular__card">
+                <div class="popular__image">
+                   <img src="assets/img/pexels-kelly-2530317 (1).jpg" alt="popular image" class="popular__img">
+                   <div class="popular__shadow"></div>
+                </div>
+
+                <h2 class="popular__title">
+                   Chattanooga
+                </h2>
+
+                <div class="popular__location">
+                   <i class="ri-map-pin-line"></i>
+                   <span>Tennessee</span>
+                </div>
+
+             </article>
+
+         </div>
+      </section>
       
-      <title>Ticket Nest</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               Ticket Nest
-            </a>
+      <!--==================== EXPLORE ====================-->
+      <section class="explore section" id="explore">
+         <div class="explore__container">
+            <div class="explore__image">
+               <img src="assets/img/explore-beach.jpg" alt="explore image" class="explore__img">
+               <div class="explore__shadow"></div>
+            </div>               
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link" active-link>Home</a>
-                     <a href="#about" class="nav__link">About</a>
-                     <a href="#popular" class="nav__link">Popular</a>
-                     <a href="#explore" class="nav__link">Explore</a>
-                  </li>
-               </ul>
-
-               <!-- Close Button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-fill"></i>
-               </div>
-            </div>
-
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-fill"></i>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <img src="assets/img/home-bg.jpg" alt="home image" class="home__bg">
-            <div class="home__shadow"></div>
-
-            <div class="home__container container grid">
-               <div class="home__data">
-                  <h3 class="home__subtitle">
-                     Welcome To Ticket Nest <br>
-                     Call (888) 656-1811
-                  </h3>
-
-                  <h1 class="home__title">
-                     Explore <br>
-                     The World
-
-                  </h1>
-
-                  <p class="home__description">
-                     Live the trips exploring the world, discover 
-paradises, islands, mountains and much 
-more, get your trip now.
-                  </p>
-
-                  <a href="#submit_form" class="button" >
-                     Start Your Journey <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-
-               <div class="home__cards grid">
-                  <article class="home__card">
-                     <img src="assets/img/home-trees.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Ontario</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-
-                  <article class="home__card">
-                     <img src="assets/img/home-lake.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">British Columbia</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-
-                  <article class="home__card">
-                     <img src="assets/img/home-mountain.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Arizona</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-
-                  <article class="home__card">
-                     <img src="assets/img/home-beach.jpg" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Florida</h3>
-                     <div class="home__card-shadow"></div>
-                  </article>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <div class="about__data">
+            <div class="explore__content container grid">
+               <div class="explore__data">
                   <h2 class="section__title">
-                     Learn More <br>
-                     About Us
+                     Immerse Yourself in AI-Infused Adventures <br>
+                     Across Paradises
                   </h2>
-                  <p class="about__description">
-                     All the trips around the world are a great 
-                     pleasure and happiness for anyone, enjoy 
-                     the sights when you travel the world. Travel 
-                     safely and without worries, get your trip and 
-                     explore the paradises of the world.
-
-                   </p>  
-
-                   <a href="#submit_form" class="button">
-                     Explore Travel <i class="ri-arrow-right-line"></i>
-                   </a>
-               </div>
-
-               <div class="about__image">
-                  <img src="assets/img/about-beach.jpg" alt="about image" class="about__img">
-                  <div class="about__shadow"></div>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== POPULAR ====================-->
-         <section class="popular section" id="popular">
-            <h2 class="section__title">
-               Enjoy The Beauty <br>
-               Of The World
-            </h2>
-
-            <div class="popular__container container grid">
-               <article class="popular__card">
-                  <div class="popular__image">
-                     <img src="assets/img/popular-mountain.jpg" alt="popular image" class="popular__img">
-                     <div class="popular__shadow"></div>
-                  </div>
-
-                  <h2 class="popular__title">
-                     Mount Logan
-                  </h2>
-
-                  <div class="popular__location">
-                     <i class="ri-map-pin-line"></i>
-                     <span>Yukon</span>
-                  </div>
-
-               </article>
-
-               <article class="popular__card">
-                  <div class="popular__image">
-                     <img src="assets/img/pexels-sasha-prasastika-2894366.jpg" alt="popular image" class="popular__img">
-                     <div class="popular__shadow"></div>
-                  </div>
-
-                  <h2 class="popular__title">
-                     Banff
-                  </h2>
-
-                  <div class="popular__location">
-                     <i class="ri-map-pin-line"></i>
-                     <span>Alberta</span>
-                  </div>
-
-               </article>
-
-               <article class="popular__card">
-                  <div class="popular__image">
-                     <img src="assets/img/pexels-kelly-2530317 (1).jpg" alt="popular image" class="popular__img">
-                     <div class="popular__shadow"></div>
-                  </div>
-
-                  <h2 class="popular__title">
-                     Chattanooga
-                  </h2>
-
-                  <div class="popular__location">
-                     <i class="ri-map-pin-line"></i>
-                     <span>Tennessee</span>
-                  </div>
-
-               </article>
-
-            </div>
-         </section>
-         
-         <!--==================== EXPLORE ====================-->
-         <section class="explore section" id="explore">
-            <div class="explore__container">
-               <div class="explore__image">
-                  <img src="assets/img/explore-beach.jpg" alt="explore image" class="explore__img">
-                  <div class="explore__shadow"></div>
-               </div>               
-
-               <div class="explore__content container grid">
-                  <div class="explore__data">
-                     <h2 class="section__title">
-                        Explore <br>
-                        The Paradises
-                     </h2>
-                     <p class="explore__description">
-                        Travel to the most beautiful places in the 
-                        world, enjoy the beauty of nature and 
-                        relax far away, we will take care of 
-                        everything else.
-                     </p>
-                  </div>
-
-                  <div class="explore__user">
-                     <img src="assets/img/explore-perfil.png" alt="explore image" class="explore__perfil">
-                     <span class="explore__name">
-                        Paul James
-                     </span>
-                  </div>
-
-               </div>
-
-            </div>
-         </section>
-         
-         <!--==================== JOIN ====================-->
-         <section class="join section" id="submit_form">
-            <div class="join__container container grid">
-               <div class="join__data">
-                  <h2 class="section__title">
-                     Start Your Journey <br>
-                     with us
-                  </h2>
-                  <p class="join__description">
-                     Your dream vacation is just a click away
-                  </p>
-
-                  <form action="" class="join__form" id="myForm">
-                     <input type="text" placeholder="Name" class="join__input" required id="form-name">
-                     <input type="email" placeholder="Email" class="join__input" required id="form-email">
-                     <button class="join__button button" type="submit">
-                        Let's Connect <i class="ri-arrow-right-line"></i>
-                     </button>
-                  </form>
-               </div>
-
-               <div class="join__image">
-                  <img src="assets/img/join-island.jpg" alt="join image" class="join__img">
-                  <div class="join__shadow"></div>
-               </div>
-
-            </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <div class="footer__content grid">
-               <div>
-                  <a href="#" class="footer__logo">Travel</a>
-
-                  <p class="footer__description">
-                     Travel with us and explore <br> 
-the world without limits.
+                  <p class="explore__description">
+                     Let AI be your travel companion! Venture into the most beautiful places on earth, revel in the beauty of nature, and unwind far away – we handle everything else so you can focus on creating timeless memories.
                   </p>
                </div>
 
-               <div class="footer__data grid">
-                  <div>
-                     <h3 class="footer__title">About</h3>
-                     <ul class="footer__links">
-                        <li><a href="about_us.html" class="footer__link">About Us</a></li>
-                        <!-- <li><a href="#explore" class="footer__link">Coming Soon..</a></li>
-                        <li><a href="#" class="footer__link">Coming Soon..</a></li>
-                        <li><a href="#" class="footer__link">Coming Soon..</a></li>
-                        <li><a href="#" class="footer__link">Coming Soon..</a></li> -->
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Company</h3>
-                     <ul class="footer__links">
-                        <li><a href="meet_the_ceo.html" class="footer__link">Meet the CEO</a></li>
-                        <!-- <li><a href="#" class="footer__link">UI Kit</a></li>
-                        <li><a href="#" class="footer__link">Styleguide</a></li>
-                        <li><a href="#" class="footer__link">Documentation</a></li>
-                        <li><a href="#" class="footer__link">Changelog</a></li> -->
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Contact</h3>
-                     <ul class="footer__links">
-                        <li><a href="join_us.html" class="footer__link">Join Us</a></li>
-                        <!-- <li><a href="#" class="footer__link">UI Kit</a></li>
-                        <li><a href="#" class="footer__link">Styleguide</a></li>
-                        <li><a href="#" class="footer__link">Documentation</a></li>
-                        <li><a href="#" class="footer__link">Changelog</a></li> -->
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Support</h3>
-                     <ul class="footer__links">
-                        <li><a href="support.html" class="footer__link">Support</a></li>
-                        <!-- <li><a href="#" class="footer__link">UI Kit</a></li>
-                        <li><a href="#" class="footer__link">Styleguide</a></li>
-                        <li><a href="#" class="footer__link">Documentation</a></li>
-                        <li><a href="#" class="footer__link">Changelog</a></li> -->
-                     </ul>
-                  </div>
-
+               <div class="explore__user">
+                  <img src="assets/img/explore-perfil.png" alt="explore image" class="explore__perfil">
+                  <span class="explore__name">
+                     Paul James
+                  </span>
                </div>
 
             </div>
+         </div>
+      </section>
+      
+      <!--==================== JOIN ====================-->
+      <section class="join section" id="submit_form">
+         <div class="join__container container grid">
+            <div class="join__data">
+               <h2 class="section__title">
+                  Begin Your AI-Enhanced Journey <br>
+                  with Ticket Nest
+               </h2>
+               <p class="join__description">
+                  Your dream vacation is just a click away. Embrace the future of travel with AI-generated itineraries that promise a personalized, seamless, and unforgettable adventure.
+               </p>
 
-            <div class="footer__group">
-               <div class="footer__social">
-                  <a href="https://www.facebook.com/ticketnest" target="_blank" class="footer__social-link">
-                     <i class="ri-facebook-line"></i>
-                  </a>
-                  <!-- <a href="#" target="_blank" class="footer__social-link">
-                     <i class="ri-instagram-line"></i>
-                  </a> -->
-                  <a href="https://www.youtube.com/channel/UCANHeHCzngEL0UhBpS3YqVg" target="_blank" class="footer__social-link">
-                     <i class="ri-youtube-line"></i>
-                  </a>
-               </div>
-               <span class="footer__copy">
-                  &#169; Copyright Ticket Nest Ltd. All rights reserved
-               </span>
+               <form action="" class="join__form" id="myForm">
+                  <input type="text" placeholder="Name" class="join__input" required id="form-name">
+                  <input type="email" placeholder="Email" class="join__input" required id="form-email">
+                  <button class="join__button button" type="submit">
+                     Let's Connect <i class="ri-arrow-right-line"></i>
+                  </button>
+               </form>
+            </div>
+
+            <div class="join__image">
+               <img src="assets/img/join-island.jpg" alt="join image" class="join__img">
+               <div class="join__shadow"></div>
             </div>
 
          </div>
-      </footer>
+      </section>
+   </main>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="" class="scrollup" id="scroll-up">
-         <i class="ri-home-7-line"></i>
-      </a>
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__content grid">
+            <div>
+               <a href="#" class="footer__logo">Ticket Nest</a>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
+               <p class="footer__description">
+                  Redefining travel experiences with AI innovation.
+               </p>
+            </div>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+            <div class="footer__data grid">
+               <div>
+                  <h3 class="footer__title">About</h3>
+                  <ul class="footer__links">
+                     <li><a href="about_us.html" class="footer__link">About Us</a></li>
+                     <li><a href="how_we_cater.html" class="footer__link">How do we work</a></li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Company</h3>
+                  <ul class="footer__links">
+                     <li><a href="terms.html" class="footer__link">Terms and Conditions</a></li>
+                     <li><a href="meet_the_ceo.html" class="footer__link">Meet the CEO</a></li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Contact</h3>
+                  <ul class="footer__links">
+                     <li><a href="refund_policy.html" class="footer__link">Refund Policy</a></li>
+                     <li><a href="join_us.html" class="footer__link">Join Us</a></li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Support</h3>
+                  <ul class="footer__links">
+                     <li><a href="support.html" class="footer__link">Support</a></li>
+                  </ul>
+               </div>
+
+            </div>
+
+         </div>
+
+         <div class="footer__group">
+            <div class="footer__social">
+               <a href="https://www.facebook.com/ticketnest" target="_blank" class="footer__social-link">
+                  <i class="ri-facebook-line"></i>
+               </a>
+               <a href="https://www.youtube.com/channel/UCANHeHCzngEL0UhBpS3YqVg" target="_blank" class="footer__social-link">
+                  <i class="ri-youtube-line"></i>
+               </a>
+            </div>
+            <span class="footer__copy">
+               &#169; Copyright Ticket Nest Ltd. All rights reserved
+            </span>
+         </div>
+
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-home-7-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
 </html>

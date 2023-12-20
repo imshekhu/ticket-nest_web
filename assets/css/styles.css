@@ -762,6 +762,209 @@ img {
   bottom: 3rem;
 }
 
+/*=============== HOW WE CATER EXPERIENCES ===============*/
+.how-we-cater {
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+.how-we-cater__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.how-we-cater__data {
+  text-align: center;
+}
+
+.how-we-cater__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.how-we-cater__description {
+  font-size: var(--normal-font-size);
+  margin-bottom: 2rem;
+}
+
+.how-we-cater__list {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.how-we-cater__list li {
+  margin-bottom: 0.5rem;
+}
+
+.how-we-cater__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.how-we-cater__img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.how-we-cater__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 90%, hsl(0, 0%, 0%) 125%);
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.how-we-cater__img:hover {
+  transform: scale(1.1);
+}
+
+/* Add this CSS code to your existing styles.css file */
+
+/*==================== CATALOG ====================*/
+.catalog {
+  padding: 100px 0;
+}
+
+.catalog__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.catalog__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.catalog__card:hover {
+  transform: scale(1.05);
+}
+
+.catalog__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.catalog__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog__data {
+  padding: 20px;
+}
+
+.catalog__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.catalog__description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.catalog__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.catalog__button:hover {
+  background-color: #00796b;
+}
+
+
+/*=============== SECTION TITLES ===============*/
+.page-title {
+  text-align: center;
+  font-size: var(--biggest-font-size);
+  margin-bottom: 2rem;
+  color: var(--title-color);
+}
+/*==================== CATALOG STYLES ====================*/
+.catalog {
+  padding: 80px 0;
+}
+
+.catalog__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.catalog__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.catalog__item:hover {
+  transform: scale(1.05);
+}
+
+.catalog__item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.catalog__item-title {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.catalog__item-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*==================== RESPONSIVE CATALOG STYLES ====================*/
+@media screen and (max-width: 768px) {
+  .catalog__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalog__item-img {
+    height: 150px;
+  }
+
+  .catalog__item-title {
+    font-size: 1.2rem;
+  }
+
+  .catalog__item-description {
+    font-size: 0.9rem;
+  }
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
